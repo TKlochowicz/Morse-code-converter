@@ -14,7 +14,7 @@ def main():
         print(morse_text)
     # If there is a character in the string that does not occur in our dictionary propmt user for another input    
     except KeyError as e:
-        print(f'You included characters {e.args} that have no translation to morse code! Please try again.')
+        print(f'You included a character ({e.args[0]}) that have no translation to morse code! Please try again.')
         main()
 
 
